@@ -1,0 +1,16 @@
+{
+  "checks": [
+    {
+      "id": "sql-connectivity",
+      "description": "Read-only connection test - does not prove any business feature",
+      "sql": "SELECT CAST(1 AS int) AS connected",
+      "params": []
+    },
+    {
+      "id": "booking-count-by-student",
+      "description": "EXAMPLE ONLY: replace dbo.Bookings and StudentName with an approved real schema",
+      "sql": "SELECT COUNT_BIG(*) AS booking_count FROM dbo.Bookings WHERE StudentName = @studentName",
+      "params": ["studentName"]
+    }
+  ]
+}

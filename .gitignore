@@ -1,0 +1,24 @@
+# API keys and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Installed dependencies
+node_modules/
+
+# Local database and test history
+data/
+evidence/
+
+# Test reports
+playwright-report/
+test-results/
+
+# Logs
+*.log
+
+# Windows temporary files
+Thumbs.db
+desktop.ini

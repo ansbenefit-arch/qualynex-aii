@@ -1,0 +1,10 @@
+{
+  "checks": [
+    {
+      "id": "sql-connectivity",
+      "description": "Read-only SQL Server connectivity check; not a booking acceptance test",
+      "sql": "SELECT CAST(1 AS int) AS connected",
+      "params": []
+    }
+  ]
+}
